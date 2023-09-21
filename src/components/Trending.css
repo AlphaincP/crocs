@@ -1,0 +1,26 @@
+.Trending_Page{
+    max-width: 1080px;
+    margin: 4rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.movie_image{
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.movie_image img{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (min-width: 600px) {
+    .Trending_Page { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .Trending_Page { grid-template-columns: repeat(3, 1fr); }
+  }  
