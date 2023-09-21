@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navigation.css';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -9,11 +10,11 @@ const Navigation = () => {
        </div>
        <div className='nav_list'>
         <ul>
-            <li>Home</li>
+            <li><Link to='/'>Home</Link></li>
             <li>Movies</li>
             <li>Tv & Shows</li>
             <li>Account</li>
-            <li className='nav_list_right'>search</li>
+            <li className='nav_list_right'><Link to='search'>search</Link></li>
         </ul>
        </div>
     </div>

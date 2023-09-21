@@ -1,0 +1,23 @@
+.search_component{
+    max-width:1080px;
+    margin: 1rem auto;
+}
+.search_component input{
+    background-color: #333;
+    width: 100%;
+    border: 1px solid #1f1f1f;
+    padding: 1rem;
+    outline: none;
+    font-size: 0.76rem;
+}
+.search_result{
+    color: var(--text-color);
+    max-width:1080px;
+    margin: 1rem auto;
+}
+@media screen and (max-width:800px) {
+    .search_component input{
+        width: 85%;
+        margin: 0 1.3rem;
+    }
+}
