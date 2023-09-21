@@ -18,6 +18,22 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.play_button{
+    margin: 1rem;
+}
+.play_button button{
+    border: none;
+    padding: 0.76rem 3rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 1rem;
+}
+.prev{
+    background-color: #ccc;
+}
+.next{
+    background-color: var(--sec-color);
+}
 @media (min-width: 600px) {
     .Trending_Page { grid-template-columns: repeat(2, 1fr); }
   }

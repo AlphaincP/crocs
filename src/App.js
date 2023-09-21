@@ -4,21 +4,15 @@ import { imageLink } from './components/link';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Trending from './components/Trending';
+import {Routes,Route} from 'react-router-dom';
 
 function App() {
 
   return (
     <div className="App">
-      <header>
-        <div className='app_navigation'>
-           <Navigation/>
-        </div>
-      </header>
-     
-      <div className='trending'>
-        <Trending/>
-      </div>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Trending/>}></Route>
+      </Routes>
     </div>
   );
 }

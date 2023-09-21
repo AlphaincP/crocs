@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
 import './Trending.css';
+import Navigation from './Navigation';
+import Footer from './Footer';
+import Copyright from './copyright';
 
 const Trending = () => {
     const [isData,setData] = useState([]);
@@ -37,6 +40,10 @@ const Trending = () => {
     } 
 
   return (
+    <>
+    <header>
+        <Navigation/>
+    </header>
     <div className='Trending_Page'>
         {
             isData.map((val) => {
@@ -68,6 +75,11 @@ const Trending = () => {
                             <button className='next' onClick={nextPage}>next</button>
                         </div>
     </div>
+    <div className='copyright'>
+        <Copyright/>
+    </div>
+    <Footer/>
+    </>
   )
 }
 
