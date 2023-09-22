@@ -55,6 +55,8 @@ const Search = () => {
                         <div className='search_image'>
                             <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt=''/>
                         </div>
+                        <h5>{title || name}</h5>
+                        <h6>{first_air_date || release_date}</h6>
                     </div>
                 )
             })
