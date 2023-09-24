@@ -15,7 +15,7 @@ const Trending = () => {
      const data = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}&page=${isPage}`)
      const dataItems = await data.json();
      setData(dataItems.results);
-     console.log(dataItems.results)
+     //console.log(dataItems.results)
     }
  
     useEffect(() =>{

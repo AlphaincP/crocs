@@ -1,16 +1,15 @@
 import React from 'react';
 import {BsCameraVideo, BsHouseFill, BsPersonCircle, BsSearch, BsTvFill} from 'react-icons/bs';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className='Footer'>
        <div className='footer_list'>
         <ul>
-            <li><BsHouseFill className='footer_icon'/></li>
-            <li><BsCameraVideo className='footer_icon'/></li>
-            <li><BsTvFill className='footer_icon'/></li>
-            <li><BsSearch className='footer_icon'/></li>
+            <li><Link to='/'><BsHouseFill className='footer_icon'/></Link></li>
+            <li><Link to='/search'><BsSearch className='footer_icon'/></Link></li>
         </ul>
        </div>
     </div>
