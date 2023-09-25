@@ -70,11 +70,12 @@ const Trending = () => {
                 )
             })
         }
-        <div className='play_button'>
+       
+    </div> 
+    <div className='play_button'>
                             <button className='prev' onClick={prevPage}>previous</button>
                             <button className='next' onClick={nextPage}>next</button>
                         </div>
-    </div>
     <div className='copyright'>
         <Copyright/>
     </div>
